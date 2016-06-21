@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ListPreference
+        android:key="pref_sport"
+        android:summary="@string/pref_sports_list_sum"
+        android:title="@string/pref_sports_list_title"
+        android:dialogTitle="@string/pref_sports_list_title"
+        android:entryValues="@array/sports_list_values"
+        android:entries="@array/sports_list_values"
+        android:dialogMessage="@string/pref_sports_list_message" />
+    <EditTextPreference
+        android:key="pref_period_duration"
+        android:summary="@string/pref_period_duration_sum"
+        android:title="@string/pref_period_duration_title"
+        android:dialogTitle="@string/pref_period_duration_title"
+        android:dialogMessage="@string/pref_period_duration_message"
+        android:defaultValue="30"
+        android:positiveButtonText="@string/ok_st"
+        android:negativeButtonText="@string/bt_cancel" />
+    <EditTextPreference
+        android:key="pref_pause_duration"
+        android:summary="@string/pref_pause_duration_sum"
+        android:title="@string/pref_pause_duration_title"
+        android:dialogTitle="@string/pref_pause_duration_title"
+        android:dialogMessage="@string/pref_pause_duration_message"
+        android:defaultValue="1"
+        android:positiveButtonText="@string/ok_st"
+        android:negativeButtonText="@string/bt_cancel"/>
+    <EditTextPreference
+        android:key="pref_exclu_duration"
+        android:summary="@string/pref_exclu_duration_sum"
+        android:title="@string/pref_exclu_duration_title"
+        android:dialogTitle="@string/pref_exclu_duration_title"
+        android:dialogMessage="@string/pref_exclu_duration_message"
+        android:defaultValue="2"
+        android:positiveButtonText="@string/ok_st"
+        android:negativeButtonText="@string/bt_cancel"/>
+    <EditTextPreference
+        android:key="pref_inter_duration"
+        android:summary="@string/pref_inter_duration_sum"
+        android:title="@string/pref_inter_duration_title"
+        android:dialogTitle="@string/pref_inter_duration_title"
+        android:dialogMessage="@string/pref_inter_duration_message"
+        android:defaultValue="10"
+        android:positiveButtonText="@string/ok_st"
+        android:negativeButtonText="@string/bt_cancel" />
+    <EditTextPreference
+        android:key="pref_nb_period"
+        android:summary="@string/pref_nb_period_sum"
+        android:title="@string/pref_nb_period_title"
+        android:dialogTitle="@string/pref_nb_period_title"
+        android:dialogMessage="@string/pref_nb_period_message"
+        android:defaultValue="2"
+        android:positiveButtonText="@string/ok_st"
+        android:negativeButtonText="@string/bt_cancel" />
+
+
+</PreferenceScreen>

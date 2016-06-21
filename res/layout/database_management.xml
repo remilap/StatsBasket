@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/frontred" >
+
+	<TextView
+		android:id="@+id/txt_hello"			    
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:text="@string/hello"
+		android:fadingEdge="horizontal|vertical"
+		android:gravity="center_vertical|center_horizontal"
+		android:layout_alignParentTop="true"
+		android:textColor="@color/yellow"
+		android:textStyle="bold"
+		android:textSize="10pt"
+		android:background="@color/black"
+		android:fadingEdgeLength="10pt"
+		android:padding="4pt" >
+	</TextView>
+
+	<ImageView
+	    android:id="@+id/logo"
+	    android:contentDescription="@string/app_name"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/txt_hello"
+	    android:gravity="center_vertical"
+	    android:scaleType="centerInside"
+	    android:src="@drawable/large_icon" >
+	</ImageView>
+
+    <Button
+        android:id="@+id/bt_save_database"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/bt_save_database" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_rest_database"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_save_database"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/bt_rest_database" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_raz_database"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_rest_database"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/bt_raz_database" >
+    </Button>
+    
+    <Button
+        android:id="@+id/bt_export_database"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_raz_database"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/bt_export_database" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_import_database"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_export_database"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/bt_import_database" >
+    </Button>
+
+</RelativeLayout>

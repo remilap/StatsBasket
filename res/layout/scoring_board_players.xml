@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/txt_score_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dip"
+        android:text="@string/txt_score_nul"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_score_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dip"
+        android:text="@string/txt_score_nul"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="@string/txt_time_nul"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_start_stop"
+        android:layout_width="75dip"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txt_time"
+        android:layout_centerHorizontal="true"
+        android:text="@string/bt_start"
+        android:textStyle="bold"
+        android:textColor="@color/blue" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_pause_A"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txt_time"
+        android:layout_marginRight="17dp"
+        android:layout_toLeftOf="@+id/bt_start_stop"
+        android:text="@string/bt_pause_init" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_pause_B"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txt_time"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/bt_start_stop"
+        android:text="@string/bt_pause_init" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_pause_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bt_pause_A"
+        android:layout_below="@+id/bt_pause_A"
+        android:gravity="center_horizontal"
+        android:text="@string/txt_time_nul"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_pause_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/bt_pause_B"
+        android:layout_below="@+id/bt_pause_B"
+        android:gravity="center_horizontal"
+        android:text="@string/txt_time_nul"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_club_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_pause_A"
+        android:layout_alignBottom="@+id/bt_pause_A"
+        android:text="@string/club_A" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_club_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_pause_B"
+        android:layout_alignBottom="@+id/bt_pause_B"
+        android:layout_alignParentRight="true"
+        android:text="@string/club_B" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txt_pause_A"
+        android:layout_centerHorizontal="true"
+        android:text="@string/txt_period_init"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@color/orange"
+        android:textStyle="bold" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_exit"
+        android:layout_width="80dip"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/bt_exit" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_reset"
+        android:layout_width="80dip"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/bt_reset" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_walk"
+        android:layout_width="80dip"
+        android:layout_height="40dp"
+        android:layout_above="@+id/bt_exit"
+        android:layout_alignParentLeft="true"
+        android:text="@string/bt_walk" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_dribble"
+        android:layout_width="80dip"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/bt_walk"
+        android:layout_alignBottom="@+id/bt_walk"
+        android:layout_toRightOf="@+id/bt_walk"
+        android:text="@string/bt_dribble" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_zone"
+        android:layout_width="80dip"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/bt_walk"
+        android:layout_alignBottom="@+id/bt_walk"
+        android:layout_toRightOf="@+id/bt_dribble"
+        android:text="@string/bt_zone" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_avert"
+        android:layout_width="80dip"
+        android:layout_height="40dp"
+        android:layout_above="@+id/bt_walk"
+        android:layout_alignParentLeft="true"
+        android:text="@string/bt_avert" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_exclu_tmp"
+        android:layout_width="80dip"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/bt_avert"
+        android:layout_alignBottom="@+id/bt_avert"
+        android:layout_toRightOf="@+id/bt_avert"
+        android:text="@string/bt_exclu_tmp" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_exclu_def"
+        android:layout_width="80dip"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/bt_avert"
+        android:layout_alignBottom="@+id/bt_avert"
+        android:layout_toRightOf="@+id/bt_exclu_tmp"
+        android:text="@string/bt_exclu_def" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_ball_lost"
+        android:layout_width="80dip"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/bt_avert"
+        android:layout_alignBottom="@+id/bt_avert"
+        android:layout_toRightOf="@+id/bt_exclu_def"
+        android:text="@string/bt_ball_lost" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_goal"
+        android:layout_width="80dip"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/bt_avert"
+        android:text="@string/bt_goal" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_stop_goal"
+        android:layout_width="80dip"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/bt_goal"
+        android:layout_toRightOf="@+id/bt_goal"
+        android:text="@string/bt_stop_goal" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_goal_7m"
+        android:layout_width="80dip"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/bt_goal"
+        android:layout_toRightOf="@+id/bt_stop_goal"
+        android:text="@string/bt_goal_7m" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_stop_goal_7m"
+        android:layout_width="80dip"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/bt_goal"
+        android:layout_toRightOf="@+id/bt_goal_7m"
+        android:text="@string/bt_stop_goal_7m" >
+    </Button>
+
+    <ListView
+        android:id="@+id/lv_players_A"
+        android:layout_width="150dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txt_pause_A"
+        android:layout_above="@+id/bt_goal" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/lv_players_B"
+        android:layout_width="150dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txt_pause_A"
+        android:layout_above="@+id/bt_goal" >
+    </ListView>
+
+</RelativeLayout>

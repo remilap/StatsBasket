@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/frontred" >
+
+	<TextView
+		android:id="@+id/txt_hello"			    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="@string/hello"
+		android:fadingEdge="horizontal|vertical"
+		android:gravity="center_vertical|center_horizontal"
+		android:layout_alignParentTop="true"
+		android:textColor="@color/yellow"
+		android:textStyle="bold"
+		android:textSize="10pt"
+		android:background="@color/black"
+		android:fadingEdgeLength="10pt"
+		android:padding="4pt" >
+	</TextView>
+
+	<ImageView
+		android:id="@+id/logo"
+		android:contentDescription="@string/app_name"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_hello"
+        android:layout_alignRight="@+id/txt_hello"
+		android:src="@drawable/large_icon"
+		android:gravity="center_vertical" >
+	</ImageView>
+
+    <Button
+        android:id="@+id/bt_score_sheet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txt_hello"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/bt_score_sheet" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_sport_management"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_score_sheet"
+        android:layout_alignLeft="@+id/bt_score_sheet"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/bt_sport_management" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_database_management"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_sport_management"
+        android:layout_alignLeft="@+id/bt_score_sheet"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/bt_database_management" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_preferences"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_database_management"
+        android:layout_alignLeft="@+id/bt_score_sheet"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/bt_preferences" >
+    </Button>
+    
+<!--     <Button
+        android:id="@+id/bt_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_save_database"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/bt_exit" />
+ -->
+
+	<TextView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/txt_version"
+	    android:text="@string/txt_version"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignRight="@+id/logo"
+	    android:gravity="center_horizontal"
+	    android:textSize="7pt"
+	    android:padding="4pt" >
+	</TextView>
+
+	<Button
+	    android:id="@+id/bt_about"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@+id/bt_preferences"
+	    android:layout_toLeftOf="@+id/bt_preferences"
+	    android:gravity="center"
+	    android:text="@string/bt_about" />
+
+</RelativeLayout>

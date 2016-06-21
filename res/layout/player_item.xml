@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_player_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/txt_player_title" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/inp_player_name"
+        android:inputType="text"
+        android:hint="@string/txt_player_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_player_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip"
+        android:minWidth="150dip" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lbl_player_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inp_player_name"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:text="@string/txt_player_name" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/inp_player_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inp_player_name"
+        android:layout_below="@+id/inp_player_name"
+        android:inputType="text"
+        android:minWidth="150dip" />
+
+    <EditText
+        android:id="@+id/inp_player_bib_number"
+        android:inputType="number"
+        android:hint="@string/txt_player_bib_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inp_player_firstname"
+        android:layout_below="@+id/inp_player_firstname"
+        android:minWidth="150dip" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/inp_player_license"
+        android:inputType="text"
+        android:hint="@string/txt_player_license"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inp_player_bib_number"
+        android:layout_below="@+id/inp_player_bib_number"
+        android:minWidth="150dip" >
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spin_player_club"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inp_player_license"
+        android:layout_below="@+id/inp_player_license"
+        android:minWidth="150dip"
+        android:prompt="@string/club_prompt" >
+    </Spinner>
+
+    <Button
+        android:id="@+id/bt_player_valid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spin_player_club"
+        android:layout_below="@+id/chk_player_doctor"
+        android:text="@string/ok_st" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_player_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bt_player_valid"
+        android:layout_marginLeft="20dip"
+        android:layout_alignBaseline="@+id/bt_player_valid"
+        android:text="@string/bt_cancel" >
+    </Button>
+
+    <TextView
+        android:id="@+id/lbl_player_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inp_player_firstname"
+        android:layout_alignBottom="@+id/inp_player_firstname"
+        android:layout_alignLeft="@+id/lbl_player_name"
+        android:text="@string/txt_player_firstname" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/lbl_player_bib_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inp_player_bib_number"
+        android:layout_alignBottom="@+id/inp_player_bib_number"
+        android:layout_alignLeft="@+id/lbl_player_firstname"
+        android:text="@string/txt_player_bib_number" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/lbl_player_license"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inp_player_license"
+        android:layout_alignBottom="@+id/inp_player_license"
+        android:layout_alignLeft="@+id/lbl_player_bib_number"
+        android:text="@string/txt_player_license" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/lbl_player_club"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/spin_player_club"
+        android:layout_alignBottom="@+id/spin_player_club"
+        android:layout_alignLeft="@+id/lbl_player_license"
+        android:text="@string/txt_player_club" >
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/chk_player_captain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_player_license"
+        android:layout_below="@+id/spin_player_club"
+        android:text="@string/txt_player_captain" >
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/chk_player_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spin_player_club"
+        android:layout_toRightOf="@+id/chk_player_captain"
+        android:text="@string/txt_player_goal" >
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/chk_player_coach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spin_player_club"
+        android:layout_toRightOf="@+id/chk_player_goal"
+        android:text="@string/txt_player_coach" >
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/chk_player_doctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chk_player_captain"
+        android:layout_below="@+id/chk_player_captain"
+        android:text="@string/txt_player_doctor" >
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/chk_player_kine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chk_player_goal"
+        android:layout_below="@+id/chk_player_goal"
+        android:text="@string/txt_player_kine" >
+     </CheckBox>
+
+</RelativeLayout>

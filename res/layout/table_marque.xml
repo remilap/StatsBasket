@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/txt_score_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dip"
+        android:text="@string/txt_score_nul"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_score_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dip"
+        android:text="@string/txt_score_nul"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="@string/txt_time_nul"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_start_stop"
+        android:layout_width="75dip"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txt_time"
+        android:layout_centerHorizontal="true"
+        android:text="@string/bt_start"
+        android:textStyle="bold"
+        android:textColor="@color/blue" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_pause_B"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txt_time"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/bt_start_stop"
+        android:text="@string/bt_pause_init" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_pause_A"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txt_time"
+        android:layout_marginRight="17dp"
+        android:layout_toLeftOf="@+id/bt_start_stop"
+        android:text="@string/bt_pause_init" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_club_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_pause_A"
+        android:layout_alignBottom="@+id/bt_pause_A"
+        android:text="@string/club_A" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_club_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_pause_B"
+        android:layout_alignBottom="@+id/bt_pause_B"
+        android:layout_alignParentRight="true"
+        android:text="@string/club_B" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_goal_A"
+        android:layout_width="75dip"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txt_club_A"
+        android:text="@string/bt_goal" >
+
+    </Button>
+
+    <Button
+        android:id="@+id/bt_goal_B"
+        android:layout_width="75dip"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txt_club_B"
+        android:text="@string/bt_goal" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_stop_goal_A"
+        android:layout_width="75dip"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bt_goal_A"
+        android:text="@string/bt_stop_goal" >
+
+    </Button>
+
+    <Button
+        android:id="@+id/bt_stop_goal_B"
+        android:layout_width="75dip"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bt_goal_B"
+        android:text="@string/bt_stop_goal" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_goal_7m_A"
+        android:layout_width="75dip"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bt_stop_goal_A"
+        android:text="@string/bt_goal_7m" >
+
+    </Button>
+
+    <Button
+        android:id="@+id/bt_goal_7m_B"
+        android:layout_width="75dip"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bt_stop_goal_B"
+        android:text="@string/bt_goal_7m" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_stop_goal_7m_A"
+        android:layout_width="75dip"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bt_goal_7m_A"
+        android:text="@string/bt_stop_goal_7m" >
+
+    </Button>
+
+    <Button
+        android:id="@+id/bt_stop_goal_7m_B"
+        android:layout_width="75dip"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bt_goal_7m_B"
+        android:text="@string/bt_stop_goal_7m" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_avert_A"
+        android:layout_width="75dip"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bt_stop_goal_7m_A"
+        android:text="@string/bt_avert" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_avert_B"
+        android:layout_width="75dip"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bt_stop_goal_7m_B"
+        android:text="@string/bt_avert" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_exclu_tmp_A"
+        android:layout_width="75dip"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bt_avert_A"
+        android:text="@string/bt_exclu_tmp" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_exclu_tmp_B"
+        android:layout_width="75dip"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bt_avert_B"
+        android:text="@string/bt_exclu_tmp" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_pause_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bt_pause_A"
+        android:layout_below="@+id/bt_pause_A"
+        android:gravity="center_horizontal"
+        android:text="@string/txt_time_nul"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_pause_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/bt_pause_B"
+        android:layout_below="@+id/bt_pause_B"
+        android:gravity="center_horizontal"
+        android:text="@string/txt_time_nul"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_exclu_player_A1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_avert_A"
+        android:layout_toRightOf="@+id/bt_exclu_tmp_A"
+        android:layout_marginLeft="8dip"
+        android:gravity="center_horizontal"
+        android:width="30dip"
+        android:text="@string/txt_exclu_init"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_exclu_time_A1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_avert_A"
+        android:layout_toRightOf="@+id/txt_exclu_player_A1"
+        android:layout_marginLeft="8dip"
+        android:gravity="center_horizontal"
+        android:text="@string/txt_time_nul"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_exclu_player_B1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_avert_B"
+        android:layout_toLeftOf="@+id/bt_exclu_tmp_B"
+        android:layout_marginRight="8dip"
+        android:gravity="center_horizontal"
+        android:width="30dip"
+        android:text="@string/txt_exclu_init"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_exclu_time_B1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_avert_B"
+        android:layout_toLeftOf="@+id/txt_exclu_player_B1"
+        android:layout_marginRight="8dip"
+        android:gravity="center_horizontal"
+        android:text="@string/txt_time_nul"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_exclu_player_A2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_exclu_player_A1"
+        android:layout_below="@+id/txt_exclu_player_A1"
+        android:gravity="center_horizontal"
+        android:width="30dip"
+        android:text="@string/txt_exclu_init"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_exclu_time_A2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_exclu_time_A1"
+        android:layout_below="@+id/txt_exclu_time_A1"
+        android:gravity="center_horizontal"
+        android:text="@string/txt_time_nul"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_exclu_player_B2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_exclu_player_B1"
+        android:layout_below="@+id/txt_exclu_player_B1"
+        android:gravity="center_horizontal"
+        android:width="30dip"
+        android:text="@string/txt_exclu_init"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_exclu_time_B2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_exclu_time_B1"
+        android:layout_below="@+id/txt_exclu_time_B1"
+        android:gravity="center_horizontal"
+        android:text="@string/txt_time_nul"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_exclu_player_A3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_exclu_player_A2"
+        android:layout_below="@+id/txt_exclu_player_A2"
+        android:gravity="center_horizontal"
+        android:width="30dip"
+        android:text="@string/txt_exclu_init"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_exclu_time_A3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_exclu_time_A2"
+        android:layout_below="@+id/txt_exclu_time_A2"
+        android:gravity="center_horizontal"
+        android:text="@string/txt_time_nul"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_exclu_player_B3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_exclu_player_B2"
+        android:layout_below="@+id/txt_exclu_player_B2"
+        android:gravity="center_horizontal"
+        android:width="30dip"
+        android:text="@string/txt_exclu_init"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_exclu_time_B3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_exclu_time_B2"
+        android:layout_below="@+id/txt_exclu_time_B2"
+        android:gravity="center_horizontal"
+        android:text="@string/txt_time_nul"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_exclu_def_A"
+        android:layout_width="75dip"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bt_exclu_tmp_A"
+        android:text="@string/bt_exclu_def" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_exclu_def_B"
+        android:layout_width="75dip"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bt_exclu_tmp_B"
+        android:text="@string/bt_exclu_def" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_exit"
+        android:layout_width="75dip"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@+id/bt_exclu_def_B"
+        android:layout_below="@+id/bt_exclu_def_B"
+        android:text="@string/bt_exit" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_reset"
+        android:layout_width="75dip"
+        android:layout_height="40dp"
+        android:layout_below="@+id/bt_exclu_def_A"
+        android:layout_toRightOf="@+id/bt_exclu_def_A"
+        android:text="@string/bt_reset" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txt_pause_A"
+        android:layout_centerHorizontal="true"
+        android:text="@string/txt_period_init"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@color/orange"
+        android:textStyle="bold" >
+    </TextView>
+
+</RelativeLayout>

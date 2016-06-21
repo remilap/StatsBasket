@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/team_id"
+        android:layout_width="1dip"
+        android:layout_height="wrap_content"
+	    android:layout_weight="0"
+        android:text=""
+        android:visibility="invisible" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/team_name"
+        android:layout_width="0dip"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="6dip"
+	    android:layout_weight="2"
+	    android:singleLine="true"
+	    android:text="@string/txt_team_name" >
+	</TextView>
+
+    <TextView
+        android:id="@+id/team_club_name"
+        android:layout_width="0dip"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="6dip"
+	    android:layout_weight="2"
+	    android:singleLine="true"
+	    android:text="@string/txt_club_title" >
+	</TextView>
+
+</LinearLayout>

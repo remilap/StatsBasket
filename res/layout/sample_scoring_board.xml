@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/txt_score_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dip"
+        android:text="@string/txt_score_nul"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_score_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dip"
+        android:text="@string/txt_score_nul"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="@string/txt_time_nul"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_start_stop"
+        android:layout_width="75dip"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txt_time"
+        android:layout_centerHorizontal="true"
+        android:text="@string/bt_start"
+        android:textStyle="bold"
+        android:textColor="@color/blue" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_pause_A"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txt_time"
+        android:layout_marginRight="17dp"
+        android:layout_toLeftOf="@+id/bt_start_stop"
+        android:text="@string/bt_pause_init" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_pause_B"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txt_time"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/bt_start_stop"
+        android:text="@string/bt_pause_init" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_pause_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bt_pause_A"
+        android:layout_below="@+id/bt_pause_A"
+        android:gravity="center_horizontal"
+        android:text="@string/txt_time_nul"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_pause_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/bt_pause_B"
+        android:layout_below="@+id/bt_pause_B"
+        android:gravity="center_horizontal"
+        android:text="@string/txt_time_nul"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_club_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_pause_A"
+        android:layout_alignBottom="@+id/bt_pause_A"
+        android:text="@string/club_A" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_club_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_pause_B"
+        android:layout_alignBottom="@+id/bt_pause_B"
+        android:layout_alignParentRight="true"
+        android:text="@string/club_B" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txt_pause_A"
+        android:layout_centerHorizontal="true"
+        android:text="@string/txt_period_init"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@color/orange"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_plA01_name"
+        android:layout_width="80dip"
+        android:layout_height="32dip"
+        android:layout_below="@+id/txt_period"
+        android:layout_marginTop="10dip"
+        android:layout_alignParentLeft="true"
+        android:text="@string/txt_player_name" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_plA01_num"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA01_name"
+        android:layout_toRightOf="@+id/txt_plA01_name"
+        android:text="@string/txt_period_init" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_plA01_score"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA01_name"
+        android:layout_toRightOf="@+id/txt_plA01_num"
+        android:text="@string/txt_score_nul" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_plA01_goal"
+        android:layout_width="60dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA01_name"
+        android:layout_toRightOf="@+id/txt_plA01_score"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="@string/bt_goal" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_plA01_failure"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA01_name"
+        android:layout_toRightOf="@+id/bt_plA01_goal"
+        android:text="@string/txt_score_nul" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_plA01_shoot"
+        android:layout_width="60dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA01_name"
+        android:layout_toRightOf="@+id/txt_plA01_failure"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="@string/bt_shoot_1p" >
+    </Button>
+    
+    <TextView
+        android:id="@+id/txt_plA02_name"
+        android:layout_width="80dip"
+        android:layout_height="32dip"
+        android:layout_below="@+id/txt_plA01_name"
+        android:layout_marginTop="0dip"
+        android:layout_alignParentLeft="true"
+        android:text="@string/txt_player_name" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_plA02_num"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA02_name"
+        android:layout_toRightOf="@+id/txt_plA02_name"
+        android:text="@string/txt_period_init" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_plA02_score"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA02_name"
+        android:layout_toRightOf="@+id/txt_plA02_num"
+        android:text="@string/txt_score_nul" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_plA02_goal"
+        android:layout_width="60dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA02_name"
+        android:layout_toRightOf="@+id/txt_plA02_score"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="@string/bt_goal" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_plA02_failure"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA02_name"
+        android:layout_toRightOf="@+id/bt_plA02_goal"
+        android:text="@string/txt_score_nul" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_plA02_shoot"
+        android:layout_width="60dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA02_name"
+        android:layout_toRightOf="@+id/txt_plA02_failure"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="@string/bt_shoot_1p" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_plA03_name"
+        android:layout_width="80dip"
+        android:layout_height="32dip"
+        android:layout_below="@+id/txt_plA02_name"
+        android:layout_marginTop="0dip"
+        android:layout_alignParentLeft="true"
+        android:text="@string/txt_player_name" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_plA03_num"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA03_name"
+        android:layout_toRightOf="@+id/txt_plA03_name"
+        android:text="@string/txt_period_init" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_plA03_score"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA03_name"
+        android:layout_toRightOf="@+id/txt_plA03_num"
+        android:text="@string/txt_score_nul" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_plA03_goal"
+        android:layout_width="60dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA03_name"
+        android:layout_toRightOf="@+id/txt_plA03_score"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="@string/bt_goal" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_plA03_failure"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA03_name"
+        android:layout_toRightOf="@+id/bt_plA03_goal"
+        android:text="@string/txt_score_nul" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_plA03_shoot"
+        android:layout_width="60dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA03_name"
+        android:layout_toRightOf="@+id/txt_plA03_failure"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="@string/bt_shoot_1p" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_plA04_name"
+        android:layout_width="80dip"
+        android:layout_height="32dip"
+        android:layout_below="@+id/txt_plA03_name"
+        android:layout_marginTop="0dip"
+        android:layout_alignParentLeft="true"
+        android:text="@string/txt_player_name" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_plA04_num"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA04_name"
+        android:layout_toRightOf="@+id/txt_plA04_name"
+        android:text="@string/txt_period_init" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_plA04_score"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA04_name"
+        android:layout_toRightOf="@+id/txt_plA04_num"
+        android:text="@string/txt_score_nul" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_plA04_goal"
+        android:layout_width="60dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA04_name"
+        android:layout_toRightOf="@+id/txt_plA04_score"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="@string/bt_goal" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_plA04_failure"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA04_name"
+        android:layout_toRightOf="@+id/bt_plA04_goal"
+        android:text="@string/txt_score_nul" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_plA04_shoot"
+        android:layout_width="60dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA04_name"
+        android:layout_toRightOf="@+id/txt_plA04_failure"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="@string/bt_shoot_1p" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_plA05_name"
+        android:layout_width="80dip"
+        android:layout_height="32dip"
+        android:layout_below="@+id/txt_plA04_name"
+        android:layout_marginTop="0dip"
+        android:layout_alignParentLeft="true"
+        android:text="@string/txt_player_name" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_plA05_num"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA05_name"
+        android:layout_toRightOf="@+id/txt_plA05_name"
+        android:text="@string/txt_period_init" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_plA05_score"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA05_name"
+        android:layout_toRightOf="@+id/txt_plA05_num"
+        android:text="@string/txt_score_nul" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_plA05_goal"
+        android:layout_width="60dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA05_name"
+        android:layout_toRightOf="@+id/txt_plA05_score"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="@string/bt_goal" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_plA05_failure"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA05_name"
+        android:layout_toRightOf="@+id/bt_plA05_goal"
+        android:text="@string/txt_score_nul" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_plA05_shoot"
+        android:layout_width="60dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA05_name"
+        android:layout_toRightOf="@+id/txt_plA05_failure"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="@string/bt_shoot_1p" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_plA06_name"
+        android:layout_width="80dip"
+        android:layout_height="32dip"
+        android:layout_below="@+id/txt_plA05_name"
+        android:layout_marginTop="0dip"
+        android:layout_alignParentLeft="true"
+        android:text="@string/txt_player_name" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_plA06_num"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA06_name"
+        android:layout_toRightOf="@+id/txt_plA06_name"
+        android:text="@string/txt_period_init" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_plA06_score"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA06_name"
+        android:layout_toRightOf="@+id/txt_plA06_num"
+        android:text="@string/txt_score_nul" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_plA06_goal"
+        android:layout_width="60dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA06_name"
+        android:layout_toRightOf="@+id/txt_plA06_score"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="@string/bt_goal" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_plA06_failure"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA06_name"
+        android:layout_toRightOf="@+id/bt_plA06_goal"
+        android:text="@string/txt_score_nul" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_plA06_shoot"
+        android:layout_width="60dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA06_name"
+        android:layout_toRightOf="@+id/txt_plA06_failure"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="@string/bt_shoot_1p" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_plA07_name"
+        android:layout_width="80dip"
+        android:layout_height="32dip"
+        android:layout_below="@+id/txt_plA06_name"
+        android:layout_marginTop="0dip"
+        android:layout_alignParentLeft="true"
+        android:text="@string/txt_player_name" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_plA07_num"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA07_name"
+        android:layout_toRightOf="@+id/txt_plA07_name"
+        android:text="@string/txt_period_init" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_plA07_score"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA07_name"
+        android:layout_toRightOf="@+id/txt_plA07_num"
+        android:text="@string/txt_score_nul" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_plA07_goal"
+        android:layout_width="60dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA07_name"
+        android:layout_toRightOf="@+id/txt_plA07_score"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="@string/bt_goal" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_plA07_failure"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA07_name"
+        android:layout_toRightOf="@+id/bt_plA07_goal"
+        android:text="@string/txt_score_nul" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_plA07_shoot"
+        android:layout_width="60dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA07_name"
+        android:layout_toRightOf="@+id/txt_plA07_failure"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="@string/bt_shoot_1p" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_plA08_name"
+        android:layout_width="80dip"
+        android:layout_height="32dip"
+        android:layout_below="@+id/txt_plA07_name"
+        android:layout_marginTop="0dip"
+        android:layout_alignParentLeft="true"
+        android:text="@string/txt_player_name" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_plA08_num"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA08_name"
+        android:layout_toRightOf="@+id/txt_plA08_name"
+        android:text="@string/txt_period_init" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_plA08_score"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA08_name"
+        android:layout_toRightOf="@+id/txt_plA08_num"
+        android:text="@string/txt_score_nul" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_plA08_goal"
+        android:layout_width="60dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA08_name"
+        android:layout_toRightOf="@+id/txt_plA08_score"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="@string/bt_goal" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_plA08_failure"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA08_name"
+        android:layout_toRightOf="@+id/bt_plA08_goal"
+        android:text="@string/txt_score_nul" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_plA08_shoot"
+        android:layout_width="60dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA08_name"
+        android:layout_toRightOf="@+id/txt_plA08_failure"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="@string/bt_shoot_1p" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_plA09_name"
+        android:layout_width="80dip"
+        android:layout_height="32dip"
+        android:layout_below="@+id/txt_plA08_name"
+        android:layout_marginTop="0dip"
+        android:layout_alignParentLeft="true"
+        android:text="@string/txt_player_name" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_plA09_num"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA09_name"
+        android:layout_toRightOf="@+id/txt_plA09_name"
+        android:text="@string/txt_period_init" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_plA09_score"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA09_name"
+        android:layout_toRightOf="@+id/txt_plA09_num"
+        android:text="@string/txt_score_nul" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_plA09_goal"
+        android:layout_width="60dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA09_name"
+        android:layout_toRightOf="@+id/txt_plA09_score"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="@string/bt_goal" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_plA09_failure"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA09_name"
+        android:layout_toRightOf="@+id/bt_plA09_goal"
+        android:text="@string/txt_score_nul" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_plA09_shoot"
+        android:layout_width="60dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA09_name"
+        android:layout_toRightOf="@+id/txt_plA09_failure"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="@string/bt_shoot_1p" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_plA10_name"
+        android:layout_width="80dip"
+        android:layout_height="32dip"
+        android:layout_below="@+id/txt_plA09_name"
+        android:layout_marginTop="0dip"
+        android:layout_alignParentLeft="true"
+        android:text="@string/txt_player_name" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_plA10_num"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA10_name"
+        android:layout_toRightOf="@+id/txt_plA10_name"
+        android:text="10" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_plA10_score"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA10_name"
+        android:layout_toRightOf="@+id/txt_plA10_num"
+        android:text="@string/txt_score_nul" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_plA10_goal"
+        android:layout_width="60dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA10_name"
+        android:layout_toRightOf="@+id/txt_plA10_score"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="@string/bt_goal" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_plA10_failure"
+        android:layout_width="30dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA10_name"
+        android:layout_toRightOf="@+id/bt_plA10_goal"
+        android:text="@string/txt_score_nul" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_plA10_shoot"
+        android:layout_width="60dip"
+        android:layout_height="32dip"
+        android:layout_alignBaseline="@+id/txt_plA10_name"
+        android:layout_toRightOf="@+id/txt_plA10_failure"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="@string/bt_shoot_1p" >
+
+    </Button>
+
+    <!--
+    <Button
+        android:id="@+id/bt_exit"
+        android:layout_width="80dip"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/bt_exit" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_reset"
+        android:layout_width="80dip"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/bt_reset" >
+    </Button>
+ -->
+
+</RelativeLayout>

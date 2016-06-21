@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/orange" >
+
+    <TableRow >
+
+        <TextView
+            android:id="@+id/txt_team_A"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:gravity="center_horizontal"
+            android:text="@string/club_A"
+            android:textColor="@color/green" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_team_B"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:gravity="center_horizontal"
+            android:text="@string/club_B"
+            android:textColor="@color/red" >
+        </TextView>
+
+    </TableRow>
+
+    <TableRow >
+
+        <Spinner
+            android:id="@+id/spin_team_A"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10" >
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/spin_team_B"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10" >
+        </Spinner>
+    </TableRow>
+
+    <TableRow >
+
+        <TextView
+            android:id="@+id/txt_match_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:text="@string/txt_match_date"
+            android:textColor="@color/white" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/ed_match_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:inputType="date"
+            android:hint="@string/txt_match_date"
+            android:textColor="@color/white" >
+        </EditText>
+    </TableRow>
+
+    <TableRow >
+
+        <TextView
+            android:id="@+id/txt_match_hour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:text="@string/txt_match_hour"
+            android:textColor="@color/white" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/ed_match_hour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:inputType="time"
+            android:hint="@string/txt_match_hour"
+            android:textColor="@color/white" >
+        </EditText>
+    </TableRow>
+
+    <TableRow >
+
+        <TextView
+            android:id="@+id/txt_match_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:text="@string/txt_match_location"
+            android:textColor="@color/white" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/ed_match_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:inputType="text"
+            android:hint="@string/txt_match_location"
+            android:textColor="@color/white" >
+        </EditText>
+    </TableRow>
+
+    <TableRow >
+
+        <Button
+            android:id="@+id/bt_save_match"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.27"
+            android:text="@string/bt_save_match" >
+        </Button>
+
+        <Button
+            android:id="@+id/bt_scoring_hand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.22"
+            android:text="@string/bt_scoring_hand" >
+        </Button>
+
+        <Button
+            android:id="@+id/bt_scoring_basket"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:text="@string/bt_scoring_basket" >
+        </Button>
+
+        <Button
+            android:id="@+id/bt_scoring_sample"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:text="@string/bt_scoring_sample" >
+        </Button>
+    </TableRow>
+
+</TableLayout>

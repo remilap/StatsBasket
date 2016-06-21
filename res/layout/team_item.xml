@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_team_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/txt_team_title" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/inp_team_name"
+        android:inputType="text"
+        android:hint="@string/txt_team_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_team_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip"
+        android:minWidth="150dip" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lbl_team_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inp_team_name"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:text="@string/txt_team_name" >
+    </TextView>
+
+    <Spinner
+        android:id="@+id/spin_team_club"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inp_team_name"
+        android:layout_below="@+id/inp_team_name"
+        android:minWidth="150dip"
+        android:prompt="@string/club_prompt" >
+    </Spinner>
+
+    <Button
+        android:id="@+id/bt_team_valid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spin_team_club"
+        android:layout_below="@+id/spin_team_club"
+        android:text="@string/ok_st" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_team_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bt_team_valid"
+        android:layout_marginLeft="20dip"
+        android:layout_alignBaseline="@+id/bt_team_valid"
+        android:text="@string/bt_cancel" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_lbl_team_club"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_team_name"
+        android:layout_alignTop="@+id/spin_team_club"
+        android:layout_marginTop="20dp"
+        android:text="@string/txt_team_club" >
+    </TextView>
+
+</RelativeLayout>

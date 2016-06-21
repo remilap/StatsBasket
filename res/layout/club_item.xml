@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_club_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/txt_club_title" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/inp_club_name"
+        android:inputType="text"
+        android:hint="@string/txt_club_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_club_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip"
+        android:minWidth="150dip" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lbl_club_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inp_club_name"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:text="@string/txt_club_name" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/inp_club_number"
+        android:inputType="number"
+        android:hint="@string/txt_club_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inp_club_name"
+        android:layout_below="@+id/inp_club_name"
+        android:minWidth="150dip" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/inp_club_town"
+        android:inputType="text"
+        android:hint="@string/txt_club_town"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inp_club_number"
+        android:layout_below="@+id/inp_club_number"
+        android:minWidth="150dip" >
+    </EditText>
+
+    <Button
+        android:id="@+id/bt_club_valid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inp_club_town"
+        android:layout_below="@+id/inp_club_town"
+        android:text="@string/ok_st" />
+
+    <Button
+        android:id="@+id/bt_club_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bt_club_valid"
+        android:layout_marginLeft="20dip"
+        android:layout_alignBaseline="@+id/bt_club_valid"
+        android:text="@string/bt_cancel" >
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_lbl_club_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inp_club_number"
+        android:layout_alignBottom="@+id/inp_club_number"
+        android:layout_alignLeft="@+id/lbl_club_name"
+        android:text="@string/txt_club_number" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_lbl_club_town"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inp_club_town"
+        android:layout_alignBottom="@+id/inp_club_town"
+        android:layout_alignLeft="@+id/txt_lbl_club_number"
+        android:text="@string/txt_club_town" >
+    </TextView>
+
+
+</RelativeLayout>

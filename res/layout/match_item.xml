@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_match_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/txt_match_title" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/inp_match_ref"
+        android:inputType="text"
+        android:hint="@string/txt_match_ref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_match_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip"
+        android:minWidth="150dip" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lbl_match_ref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inp_match_ref"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:text="@string/txt_match_ref" >
+    </TextView>
+
+    <Spinner
+        android:id="@+id/spin_match_club_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inp_match_ref"
+        android:layout_below="@+id/inp_match_ref"
+        android:minWidth="150dip"
+        android:prompt="@string/club_prompt" >
+    </Spinner>
+
+    <TextView
+        android:id="@+id/lbl_match_club_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/spin_match_club_a"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:text="@string/txt_match_club_a" >
+    </TextView>
+
+    <Spinner
+        android:id="@+id/spin_match_club_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inp_match_ref"
+        android:layout_below="@+id/spin_match_club_a"
+        android:minWidth="150dip"
+        android:prompt="@string/club_prompt" >
+    </Spinner>
+
+    <TextView
+        android:id="@+id/lbl_match_club_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/spin_match_club_b"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:text="@string/txt_match_club_b" >
+    </TextView>
+
+    <!-- DatePicker
+        android:id="@+id/datpic_match_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inp_match_ref"
+        android:layout_below="@+id/spin_match_club_b"
+        android:scrollbarAlwaysDrawVerticalTrack="false" /> -->
+
+    <EditText
+        android:id="@+id/inp_match_date"
+        android:inputType="date"
+        android:hint="@string/txt_match_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inp_match_ref"
+        android:layout_below="@+id/spin_match_club_b"
+        android:minWidth="150dip" >
+    </EditText>
+
+    <Button
+        android:id="@+id/bt_match_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/inp_match_date"
+        android:layout_marginLeft="20dip"
+        android:layout_alignBaseline="@+id/inp_match_date"
+        android:text="@string/bt_match_date" />
+
+    <TextView
+        android:id="@+id/txt_lbl_match_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inp_match_date"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:text="@string/txt_match_date" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/inp_match_location"
+        android:inputType="text"
+        android:hint="@string/txt_match_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inp_match_ref"
+        android:layout_below="@+id/inp_match_date"
+        android:minWidth="150dip" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/txt_lbl_match_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inp_match_location"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:text="@string/txt_match_location" >
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_match_valid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inp_match_ref"
+        android:layout_below="@+id/inp_match_location"
+        android:text="@string/ok_st" />
+
+    <Button
+        android:id="@+id/bt_match_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bt_match_valid"
+        android:layout_marginLeft="20dip"
+        android:layout_alignBaseline="@+id/bt_match_valid"
+        android:text="@string/bt_cancel" />
+
+</RelativeLayout>
