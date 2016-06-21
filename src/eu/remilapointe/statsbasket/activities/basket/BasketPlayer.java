@@ -4,7 +4,6 @@
 package eu.remilapointe.statsbasket.activities.basket;
 
 import eu.remilapointe.statsbasket.common.play.CommonPlayer;
-import eu.remilapointe.statsbasket.sport.DefaultLog;
 import eu.remilapointe.statsbasket.sport.Loggable;
 
 
